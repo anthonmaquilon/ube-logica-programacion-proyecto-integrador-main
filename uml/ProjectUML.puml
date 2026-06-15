@@ -1,0 +1,80 @@
+@startuml
+title Proyecto PLC Emulado - Diagrama de Clases
+
+class User {
+  - int id
+  - String username
+  - String password
+  - String role
+  + getId()
+  + getUsername()
+  + getPassword()
+  + getRole()
+}
+
+class PlcReading {
+  - int id
+  - Date timestamp
+  - String tag
+  - double value
+  - String status
+  - String description
+  + getId()
+  + getTimestamp()
+  + getTag()
+  + getValue()
+  + getStatus()
+  + getDescription()
+}
+
+class DBManager {
+  - static DBManager instance
+  - static final String URL
+  - static final String USER
+  - static final String PASS
+  + getInstance()
+  + getConnection()
+}
+
+class UserDAO {
+  + findByCredentials(username, password)
+}
+
+class PlcReadingDAO {
+  + findAll()
+  + insertReading(PlcReading)
+}
+
+class LoginFrame {
+  - JTextField txtUser
+  - JPasswordField txtPass
+  + doLogin()
+}
+
+class MainFrame {
+  - User user
+  + init()
+}
+
+class PlcReadingsFrame {
+  + initUI()
+}
+
+class PlcReadingFormFrame {
+  - JTextField txtTag
+  - JSpinner spnValue
+  - JComboBox<String> cmbStatus
+  - JTextField txtDescription
+  + doSave()
+}
+
+UserDAO --> User
+PlcReadingDAO --> PlcReading
+LoginFrame --> UserDAO
+LoginFrame --> MainFrame
+MainFrame --> PlcReadingsFrame
+MainFrame --> PlcReadingFormFrame
+DBManager <|-- UserDAO
+DBManager <|-- PlcReadingDAO
+
+@enduml
