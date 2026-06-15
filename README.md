@@ -1,15 +1,13 @@
 # Proyecto Integrador Monitoreo y Control de PLC Emulado - Lógica de Programación
 
-## Descripción
+Descripción:
 Aplicación de escritorio desarrollada en Java Swing para el monitoreo y control básico de un `PLC emulado en tiempo real`. El sistema permite la gestión de usuarios mediante roles, el registro de eventos operativos, la visualización del estado del proceso y la generación de reportes almacenados en una base de datos `MySQL`.
 
 Este proyecto fue desarrollado como parte de una actividad académica orientada a la aplicación de lógica de programación, programación orientada a objetos, bases de datos y diseño de interfaces gráficas.
 
-## Características Principales
-
+## Características Principales:
 * Autenticación de usuarios con control de acceso por roles.
 * Gestión de tres tipos de usuarios:
-
   * Administrador (ADMIN)
   * Operador (OPERATOR)
   * Invitado (GUEST)
@@ -20,15 +18,14 @@ Este proyecto fue desarrollado como parte de una actividad académica orientada 
 * Persistencia de datos mediante MySQL.
 * Arquitectura basada en Java Swing y Maven.
 
-## Tecnologías Utilizadas
-
+## Tecnologías Utilizadas:
 * Java 8 o superior
 * Java Swing
 * Maven
 * MySQL
 * JDBC
 
-## Estructura del Proyecto
+## Estructura del Proyecto:
 
 ```text
 src/
@@ -43,7 +40,6 @@ README.md
 ```
 
 ## Requisitos Previos
-
 Antes de ejecutar el proyecto asegúrese de tener instalado:
 
 * JDK 8 o superior
