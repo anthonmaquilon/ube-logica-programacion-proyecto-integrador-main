@@ -28,7 +28,7 @@ Este proyecto fue desarrollado como parte de una actividad académica orientada 
 ## Estructura del Proyecto:
 
 ```text
-ube-logica-programacion-proy-integrador-main
+UBE-Logica-Programacion-Proyecto-Integrador-main
 │
 ├── DOCUMENTATION.md
 ├── IA_AUDIT.md
