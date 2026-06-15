@@ -28,15 +28,45 @@ Este proyecto fue desarrollado como parte de una actividad académica orientada 
 ## Estructura del Proyecto:
 
 ```text
-src/
-├── main/
-│   ├── java/
-│   │   └── com/ube/proyintegrador/
-│   └── resources/
-sql/
-└── schema.sql
-pom.xml
-README.md
+ube-logica-programacion-proy-integrador-main
+│
+├── DOCUMENTATION.md
+├── IA_AUDIT.md
+├── pom.xml
+├── README.md
+│
+├── lib
+│   └── mysql.jar
+│
+├── sql
+│   └── schema.sql
+│
+└── src
+    └── main
+        └── java
+            └── com
+                └── ube
+                    └── proyintegrador
+                        │
+                        ├── Main.java
+                        │
+                        ├── dao
+                        │   ├── PlcReadingDAO.java
+                        │   └── UserDAO.java
+                        │
+                        ├── db
+                        │   └── DBManager.java
+                        │
+                        ├── models
+                        │   ├── PlcReading.java
+                        │   └── User.java
+                        │
+                        └── ui
+                            ├── LoginFrame.java
+                            ├── MainFrame.java
+                            ├── PlcDashboardFrame.java
+                            ├── PlcReadingFormFrame.java
+                            └── PlcReadingsFrame.java
 ```
 
 ## Requisitos Previos
