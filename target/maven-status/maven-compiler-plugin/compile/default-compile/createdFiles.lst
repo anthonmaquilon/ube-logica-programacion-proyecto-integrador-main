@@ -1,0 +1,13 @@
+com\ube\proyintegrador\ui\MainFrame.class
+com\ube\proyintegrador\ui\PlcReadingsFrame$2.class
+com\ube\proyintegrador\ui\PlcReadingFormFrame.class
+com\ube\proyintegrador\ui\PlcReadingsFrame.class
+com\ube\proyintegrador\models\User.class
+com\ube\proyintegrador\ui\PlcDashboardFrame.class
+com\ube\proyintegrador\dao\PlcReadingDAO.class
+com\ube\proyintegrador\ui\LoginFrame.class
+com\ube\proyintegrador\db\DBManager.class
+com\ube\proyintegrador\dao\UserDAO.class
+com\ube\proyintegrador\models\PlcReading.class
+com\ube\proyintegrador\Main.class
+com\ube\proyintegrador\ui\PlcReadingsFrame$1.class
