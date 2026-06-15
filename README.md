@@ -1,25 +1,20 @@
-# Lógica de Programación - Proyecto Integrador
-La aplicación consiste en un sistema de escritorio desarrollado en Java Swing que permite monitorear y controlar un `PLC emulado en tiempo real`. El sistema implementa autenticación de usuarios mediante roles, almacenamiento persistente en `MySQL`, visualización de estados operativos y generación de reportes de eventos registrados.
+# Proyecto Integrador - Lógica de Programación
 
-La lógica principal se basa en la simulación continua de señales provenientes de un PLC, las cuales son procesadas, almacenadas y presentadas al usuario según sus permisos de acceso.
+Proyecto base para la entrega final: aplicación de escritorio Java (Swing) para monitoreo y control básico de un PLC emulado en tiempo real, con gestión de roles, conexión a MySQL y reportes.
 
-1. Requisitos Mínimos:
-* Java JDK 8 o superior.
-* Servidor MySQL instalado y configurado en localhost.
-* Usuario de base de datos con permisos de acceso (por defecto: `root`).
-* Apache Maven para la gestión de dependencias y compilación del proyecto.
-* Entorno de desarrollo compatible con proyectos Maven (NetBeans, IntelliJ IDEA o Eclipse).
+Dominio: lectura de taps de PLC emulado, registro de eventos y paneles de estado.
 
-2. Pasos para la Configuración y Ejecución del Proyecto:
-* Importación y Compilación del Proyecto `mvn package`.
-* Abrir el entorno de desarrollo (NetBeans, IntelliJ IDEA o Eclipse).
-* Crear la base de datos y tablas ejecutando `sql/schema.sql` en su servidor MySQL local.
-* Seleccionar la opción Importar Proyecto Maven.
-* Cargar la carpeta raíz del proyecto que contiene el archivo `pom.xml`.
-* Esperar a que Maven descargue automáticamente las dependencias necesarias.
-* Ejecutar la clase `com.ube.proyintegrador.Main`.
+Requisitos mínimos:
+- Java 8+
+- MySQL en localhost (usuario `root`, con contraseña si corresponde)
+- Maven
 
-3. Acceso al Sistema con usuarios de prueba (`sql/schema.sql`):
-* admin / admin123 (ADMIN)
-* operador / oper123 (OPERATOR)
-* invitado / guest123 (GUEST)
+Pasos rápidos:
+1. Importar el proyecto en su IDE (Maven) o ejecutar `mvn package`.
+2. Crear la base de datos y tablas ejecutando `sql/schema.sql` en su servidor MySQL local.
+3. Ejecutar la clase `com.ube.proyintegrador.Main`.
+
+Usuarios de prueba (según `sql/schema.sql`):
+- admin / admin123 (ADMIN)
+- operador / oper123 (OPERATOR)
+- invitado / guest123 (GUEST)
